@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: black;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.services, .booking {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-card {
+  background: #1c1c1c;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.price {
+  color: gold;
+  font-weight: bold;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
